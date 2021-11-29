@@ -21,6 +21,7 @@ function App() {
         >
           Learn React
         </a>
+        <p>Math Magicians</p>
       </header>
     </div>
   );
