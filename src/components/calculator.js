@@ -1,36 +1,62 @@
 import React, { Component } from 'react';
+import Button from './button';
+import calculate from '../logic/calculate';
 import '../index.css';
 
 class Calculator extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      total: null,
+      next: null,
+      operation: null,
+    };
   }
 
   render() {
+    const handler = (buttoName) => {
+      const name = buttoName.target.innerText;
+      const { total, next, operation } = calculate(this.state, name);
+      this.setState({ total, next, operation });
+    };
+    const { total, next, operation } = this.state;
+
+    const display = () => {
+      if (next) {
+        return next;
+      }
+      if (operation) {
+        return operation;
+      }
+      if (total) {
+        return total;
+      }
+      return 0;
+    };
     return (
       <div className="calculator-flex">
-        <div className="output">{0}</div>
+        <div className="output">{display()}</div>
         <div className="buttons">
-          <button type="button" className="button">AC</button>
-          <button type="button" className="button">+/-</button>
-          <button type="button" className="button">%</button>
-          <button type="button" className="button highlight">&divide;</button>
-          <button type="button" className="button">7</button>
-          <button type="button" className="button">8</button>
-          <button type="button" className="button">9</button>
-          <button type="button" className="button highlight">&times;</button>
-          <button type="button" className="button">4</button>
-          <button type="button" className="button">5</button>
-          <button type="button" className="button">6</button>
-          <button type="button" className="button highlight">-</button>
-          <button type="button" className="button">1</button>
-          <button type="button" className="button">2</button>
-          <button type="button" className="button">3</button>
-          <button type="button" className="button highlight">+</button>
-          <button type="button" className="button span-two">0</button>
-          <button type="button" className="button">.</button>
-          <button type="button" className="button highlight">=</button>
+          <Button value="AC" click={handler} />
+          <Button value="+/-" click={handler} />
+          <Button value="%" click={handler} />
+          <Button value="÷" click={handler} />
+          <Button value="7" click={handler} />
+          <Button value="8" click={handler} />
+          <Button value="9" click={handler} />
+          <Button value="x" click={handler} />
+          <Button value="4" click={handler} />
+          <Button value="5" click={handler} />
+          <Button value="6" click={handler} />
+          <Button value="-" click={handler} />
+          <Button value="1" click={handler} />
+          <Button value="2" click={handler} />
+          <Button value="3" click={handler} />
+          <Button value="-" click={handler} />
+          <Button value="+" click={handler} />
+          <Button value="0" click={handler} />
+          <Button value="." click={handler} />
+          <Button value="=" click={handler} />
         </div>
       </div>
     );
