@@ -52,9 +52,9 @@ const Calculator = () => {
           <Button value="1" click={handler} />
           <Button value="2" click={handler} />
           <Button value="3" click={handler} />
-          <Button value="-" click={handler} />
           <Button value="+" click={handler} />
-          <Button value="0" click={handler} />
+          <Button id="zero" value="0" click={handler} />
+          <Button />
           <Button value="." click={handler} />
           <Button value="=" click={handler} />
         </div>

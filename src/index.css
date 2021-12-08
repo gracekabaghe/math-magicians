@@ -65,10 +65,6 @@ code {
   cursor: pointer;
 }
 
-.span-two {
-  width: 14rem;
-}
-
 .highlight {
   background-color: #f5913e;
 }
@@ -93,6 +89,15 @@ code {
 
 .quotePage {
   padding-left: 5%;
+}
+
+button #zero {
+  color: red;
+}
+
+button#zero {
+  border: 1px solid red;
+  width: 14rem;
 }
 
 @media screen and (max-width: 768px) {
