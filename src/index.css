@@ -33,11 +33,20 @@ code {
   margin: 8rem auto;
 }
 
+.container {
+  display: flex;
+}
+
+.cal-p {
+  margin-top: 20%;
+  padding-left: 5%;
+}
+
 .output {
   font-size: 45px;
   text-align: right;
   background-color: #858694;
-  color: white;
+  color: #fff;
   padding: 2rem;
 }
 
@@ -56,10 +65,48 @@ code {
   cursor: pointer;
 }
 
-.span-two {
+.highlight {
+  background-color: #f5913e;
+}
+
+.nav-links > * {
+  margin-right: 25px;
+  margin-left: 25px;
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
+  cursor: pointer;
+}
+
+.homePage {
+  padding: 20px;
+}
+
+.quotePage {
+  padding-left: 5%;
+}
+
+button #zero {
+  color: red;
+}
+
+button#zero {
+  border: 1px solid red;
   width: 14rem;
 }
 
-.highlight {
-  background-color: #f5913e;
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .cal-p {
+    margin-top: 5%;
+    padding-left: 3%;
+  }
 }
