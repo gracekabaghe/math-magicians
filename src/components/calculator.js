@@ -1,26 +1,22 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import Button from './button';
 import calculate from '../logic/calculate';
 import '../index.css';
 
-class Calculator extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      total: null,
-      next: null,
-      operation: null,
-    };
-  }
+const Calculator = () => {
+  const [value, setValue] = useState({
+    total: '',
+    next: '',
+    operation: '',
+  });
 
-  render() {
-    const handler = (buttoName) => {
-      const name = buttoName.target.innerText;
-      const { total, next, operation } = calculate(this.state, name);
-      this.setState({ total, next, operation });
-    };
-    const { total, next, operation } = this.state;
+  const handler = (buttonName) => {
+    const name = buttonName.target.innerText;
+    setValue(calculate(value, name));
+  };
+  const { total, next, operation } = value;
 
+ pages
     const display = () => {
       if (next) {
         return next;
@@ -64,8 +60,8 @@ class Calculator extends Component {
           </div>
         </div>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
 export default Calculator;
