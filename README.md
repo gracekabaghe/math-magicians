@@ -3,7 +3,7 @@
 
 > Calculator build using React.
 
-![screenshot](./calculator.png)
+![screenshot](./cal.png)
 
 The core functionality of this calculator is held in a React component.
 
@@ -15,7 +15,8 @@ The core functionality of this calculator is held in a React component.
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://gracekabaghe.github.io/math-magicians/
+)
 
 To get a local copy up and running follow these simple example steps.
  - Clone the repository:git@github.com:gracekabaghe/math-magicians.git
