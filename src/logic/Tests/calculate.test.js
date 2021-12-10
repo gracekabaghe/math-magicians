@@ -8,11 +8,11 @@ beforeEach(() => {
 
 describe('sum of numbers', () => {
   test('it gives the correct answer', () => {
-    calcObject = calculate(calcObject, '1');
+    calcObject = calculate(calcObject, '5');
     calcObject = calculate(calcObject, '+');
     calcObject = calculate(calcObject, '5');
     calcObject = calculate(calcObject, '=');
-    expect(calcObject.total).toBe('6');
+    expect(calcObject.total).toBe('10');
   });
 
   test('it adds numbers', () => {
