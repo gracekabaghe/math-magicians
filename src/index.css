@@ -1,13 +1,107 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    'Roboto',
+    'Oxygen',
+    'Ubuntu',
+    'Cantarell',
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family:
+    source-code-pro,
+    Menlo,
+    Monaco,
+    Consolas,
+    'Courier New',
     monospace;
+}
+
+.calculator-flex {
+  display: flex;
+  flex-direction: column;
+  width: 28rem;
+  margin: 8rem auto;
+}
+
+.container {
+  display: flex;
+}
+
+.cal-p {
+  margin-top: 20%;
+  padding-left: 5%;
+}
+
+.output {
+  font-size: 45px;
+  text-align: right;
+  background-color: #858694;
+  color: #fff;
+  padding: 2rem;
+}
+
+.buttons {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.button {
+  width: 7rem;
+  height: 76px;
+  font-size: 24px;
+  background-color: #e0e0e0;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.highlight {
+  background-color: #f5913e;
+}
+
+.nav-links > * {
+  margin-right: 25px;
+  margin-left: 25px;
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
+  cursor: pointer;
+}
+
+.homePage {
+  padding: 20px;
+}
+
+.quotePage {
+  padding-left: 5%;
+}
+
+button#zero {
+  width: 14rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .cal-p {
+    margin-top: 5%;
+    padding-left: 3%;
+  }
 }
