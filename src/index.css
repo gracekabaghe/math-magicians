@@ -91,12 +91,7 @@ code {
   padding-left: 5%;
 }
 
-button #zero {
-  color: red;
-}
-
 button#zero {
-  border: 1px solid red;
   width: 14rem;
 }
 

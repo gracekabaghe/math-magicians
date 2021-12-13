@@ -1,0 +1,200 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`change screen when we click navbar on Home 1`] = `
+<div
+  className="homePage"
+>
+  <h1>
+    Welcome
+  </h1>
+  <p>
+    Howdy! Glad you are here! Feel free to navigate this site and be sure to solve some math problems as you look around.
+  </p>
+  <p>
+    There are three pages on this site. On the menu click on Quotes to read some insightful things other mathematicians have said.
+  </p>
+  <p>
+    The calculator page contains the main calculator, solve anything that your heart desires. Let me know if you have any questions.
+  </p>
+</div>
+`;
+
+exports[`change screen when we click navbar on Quote 1`] = `
+<div
+  className="quotePage"
+>
+  <h1>
+    Quotes
+  </h1>
+  <blockquote>
+    Pure mathematics is, in its way, the poetry of logical ideas. — Albert Einstein, German theoretical physicist
+  </blockquote>
+  <blockquote>
+    Mathematics is the most beautiful and most powerful creation of the human spirit. — Stefan Banach, Polish mathematician
+  </blockquote>
+  <blockquote>
+    We will always have STEM with us. Some things will drop out of the public eye and go away, but there will always be science, engineering, and technology. And there will always, always be mathematics. — Katherine Johnson, African-American mathematician
+  </blockquote>
+</div>
+`;
+
+exports[`change screen when we click navbar on calculator 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="cal-p"
+  >
+    <p>
+      Solve some Maths
+    </p>
+  </div>
+  <div
+    className="calculator-flex"
+  >
+    <div
+      className="output"
+    >
+      0
+    </div>
+    <div
+      className="buttons"
+    >
+      <button
+        className="button"
+        onClick={[Function]}
+        type="button"
+      >
+        AC
+      </button>
+      <button
+        className="button"
+        onClick={[Function]}
+        type="button"
+      >
+        +/-
+      </button>
+      <button
+        className="button"
+        onClick={[Function]}
+        type="button"
+      >
+        %
+      </button>
+      <button
+        className="button"
+        onClick={[Function]}
+        type="button"
+      >
+        ÷
+      </button>
+      <button
+        className="button"
+        onClick={[Function]}
+        type="button"
+      >
+        7
+      </button>
+      <button
+        className="button"
+        onClick={[Function]}
+        type="button"
+      >
+        8
+      </button>
+      <button
+        className="button"
+        onClick={[Function]}
+        type="button"
+      >
+        9
+      </button>
+      <button
+        className="button"
+        onClick={[Function]}
+        type="button"
+      >
+        x
+      </button>
+      <button
+        className="button"
+        onClick={[Function]}
+        type="button"
+      >
+        4
+      </button>
+      <button
+        className="button"
+        onClick={[Function]}
+        type="button"
+      >
+        5
+      </button>
+      <button
+        className="button"
+        onClick={[Function]}
+        type="button"
+      >
+        6
+      </button>
+      <button
+        className="button"
+        onClick={[Function]}
+        type="button"
+      >
+        -
+      </button>
+      <button
+        className="button"
+        onClick={[Function]}
+        type="button"
+      >
+        1
+      </button>
+      <button
+        className="button"
+        onClick={[Function]}
+        type="button"
+      >
+        2
+      </button>
+      <button
+        className="button"
+        onClick={[Function]}
+        type="button"
+      >
+        3
+      </button>
+      <button
+        className="button"
+        onClick={[Function]}
+        type="button"
+      >
+        +
+      </button>
+      <button
+        className="button"
+        id="zero"
+        onClick={[Function]}
+        type="button"
+      >
+        0
+      </button>
+      <button
+        className="button"
+        onClick={[Function]}
+        type="button"
+      >
+        .
+      </button>
+      <button
+        className="button"
+        onClick={[Function]}
+        type="button"
+      >
+        =
+      </button>
+    </div>
+  </div>
+</div>
+`;
