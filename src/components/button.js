@@ -10,6 +10,14 @@ class Button extends Component {
 
   render() {
     const { value, click } = this.props;
+    if (value === '0') {
+      return (
+        <button type="button" id="zero" className="button" onClick={click}>
+          {value}
+        </button>
+      );
+    }
+
     return (
       <button type="button" className="button" onClick={click}>
         {value}

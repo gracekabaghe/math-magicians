@@ -54,7 +54,6 @@ const Calculator = () => {
           <Button value="3" click={handler} />
           <Button value="+" click={handler} />
           <Button id="zero" value="0" click={handler} />
-          <Button />
           <Button value="." click={handler} />
           <Button value="=" click={handler} />
         </div>
