@@ -15,7 +15,8 @@ The core functionality of this calculator is held in a React component.
 
 ## Live Demo
 
-[Live Demo Link](https://gracekabaghe.github.io/math-magicians/
+[Live Demo Link](https://calculator-math-magicians.herokuapp.com/calculator
+/
 )
 
 To get a local copy up and running follow these simple example steps.
